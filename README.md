@@ -82,5 +82,40 @@ A data analyst helps an organization make informed decisions that can improve op
 * monitor practices,processes and systems to identify opportunities for improvement
 * Translate important questions into concrete analytical tasks
 * Gather new data to answer client questions ,collating and organizing data from multiple sources
-  
+* Design ,Build, Test and maintain backend code
+* Establish data processes,define data quality criteria,and implement data quality processes
+* Work as part of a team to evaluate and analyze key data that will be used to shape future business strategies
+
+### Step 4: Typical process of a data analyst
+##### 5 steps data analyst can take when approaching a new projects
+
+* ``Step 1: Define questions you want to answer=take problem,make hypothesis``
+  - what data will I need?
+  - Where will it come from?
+    
+* ``Step 2: Collect the data``
+  - gather data from primary sources or from internal data
+    - from CRM Software ,Email ,marketing tools
+    - can also gather data from secondary sources or external sources
+      
+* ``Step 3 : Clean the Data``
+  - original data might include duplicates ,anamoalies ,missing data,this must be removed
+    
+* ``Step 4 : Analyze the Data``
+  - common analysis include:
+    - Regression analysis
+    - Cluster analysis
+    - Time series analysis
+
+* ``Step 5 : intepret and share results``
+  - in a form of a chart or graph,and being able to say what the data analysis shows you.
+
+### Step 5: Skills needed to become a data Analyst
+- Mathematical and statistical ability
+- programming knowledge on python ,oracle and SQL
+- Analytical mindset
+- Excellenct communication skills
+ 
+* Business analytics is all about answering questions and solving business challenges
+
  
