@@ -236,3 +236,13 @@ character data type limits data entry to only valid characters .Characters can i
 * Data Types define values placed in columns,Strong typing is when technology rigidly enforces data types.A database column defined as numeric only accepts numerical values
 * Weak Typing loosely enforces data types ,spreadsheets use weak typing to help make it easier for people to finish their work,
 * Spreadsheets default to an "automatic" data type and accommodate practically any value
+---
+---
+
+# Unstructured data TYPES
+* UNSTRUCTURED DATA is any type of data that does not fit neatly into the tabular model
+* Examples of unstructured data include:
+  - Digital images
+  - audio recordings
+  - video recordings
+  - open-ended survey responses
