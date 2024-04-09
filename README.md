@@ -181,7 +181,58 @@ These tools automate much of the heavy lifting of data analysis,improving the an
 * Data element is an attribute about a person,place ,or thing containing data within a range of values.Data elements also describe characteristics of activities ,including orders ,transactions and events.,the column headings name the data element ,while each row is an example value for that format
 * Data type limits the values a data element can have ,individual data types support structured,unstructured and semi-structured data
 
-* 1 Tabular Data
+* **1 Tabular Data**
   - tabular data is data organized into a table,made up of columns and rows .a table represents information about a single topic
   - Each **``column``** represents a uniquely named field within a table,also called a variable,about a single characteristics,contents of each column contain values for the data element as defined by the column header
   - Each **``row``** represents a record of a single instance of the table's topic
+* Tabular data as rectangular ,meaning it is easier to to draw a rectangle around.top of the rectangle is defined by columns,while rows define the left side of the rectangle,and the intersection of a row and colum contains a specific value.
+* Microsoft Excel ,google sheets, and apple numbers are practical tools for presenting tabular data
+* Relational Database management system(RDMS), commonly called a database extends the tabular model wherby instead of having all data in a single table,a database organisez related data across multiple tables
+* Instead of having all data in a single table,a database organizes related data across multiple tables
+* The connection between tables is known as a relationship.Oracle,Microsoft SQL server,MySQL, and PostgreSQL are some examples of database software
+* Tabular data is the concept that underpins both spreadsheets and relational databases
+
+## STRUCTURED DATA TYPES
+* Structured data is tabular in nature and is organized into rows and columns,Structured data is what typically comes to mind when looking at a spreadsheet
+* Structured data is what typically comes to mind when looking at a spreadsheet.With clearly defined columnn,headings,spreadsheets are easy to work with and easy to understand,so in a spreadsheet cells are where rows and colums intersect.
+
+## Common Data Types that give structured data its structure 
+
+## Character
+character data type limits data entry to only valid characters .Characters can include the alphabet that you might see on your keyboard,as well as numbers.So depending on your needs multiple data types are available that can enforce character limits
+
+* **ALPHANUMERIC** is the most widely used data type for strong character based data,alphanumeric is appropriate when a data element consists of both numbers and letters
+* Alphanumeric data type is ideal for storing product stock-keeping units (SKUs),skus are common for retail clothing space
+* one practical use of the text data type is to improve the overall data quality
+
+![Screenshot 2024-04-09 153302](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/7f802c20-9ec6-48a4-8756-56e8aa94fe99)
+
+## Character Sets
+* We need to think about the character set we are using to input and store data when using a database.
+* **Database use character sets to map,or encode,data and store it digitally**
+* The ASCII encoding standard is based on the U.S English alphabet,it accommodates both the upper and lowercase English alphabet and numbers,mathematical operators and symbols
+* one of the most commonis unicode Transormation Format-8(UTF-8), it allows non latin characters to be input by a user and stored in a file or database
+
+## DATA TYPE
+#### NUMBERS
+* When numbers exclusively make up values for a data attribute,numeric becomes the data type of choice
+* This data type appears to be simple and obvious based on its name.
+* Databases accommodate two types of numeric data types:integar and numeric.
+
+#### Whole Numbers
+* The integar and all its subtypes are for storing whole numbers
+* The bit data type is intended for storing the status of a flag.
+
+#### Rational Numbers
+* The numeric data type is for rational numbers that include a decimal point.
+* As with integar family of data types,each database vendor has its implementation nuances
+* must take several factors into account when dealing with rational numbers.in both SQL Server and MySQL,there is a data type called numeric that is functionally equivalent to the decimal data type.
+
+#### Date and Time
+* Gathered together under the broad category of date,day of year and time of day are data elements that appear with great frequency
+![Screenshot 2024-04-09 155648](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/c11885dd-4420-4782-ba73-f6da01f04316)
+
+## Strong and Weak Typing
+* Data Types define values placed in columns,Strong typing is when technology rigidly enforces data types.A database column defined as numeric only accepts numerical values
+* Weak Typing loosely enforces data types ,spreadsheets use weak typing to help make it easier for people to finish their work,
+* Spreadsheets default to an "automatic" data type and accommodate practically any value
