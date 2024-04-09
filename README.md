@@ -117,5 +117,45 @@ A data analyst helps an organization make informed decisions that can improve op
 - Excellenct communication skills
  
 * Business analytics is all about answering questions and solving business challenges
+---
+---
 
- 
+### Three Major pillars that allow analytics progras to thrive
+* Data
+* Storage
+* Computing power
+
+## The analytics Process
+- Analysts working with data move through a series of different steps as they seek to gain business value from their organization's data
+![Screenshot 2024-04-09 105600](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/9a12f9f1-1010-4645-9dc0-eba382930289)
+
+* Data acquisition
+* Cleaning and manipulation
+* Analysis
+* Visualization
+* Reporting and communication
+
+#### Analytics  Process is iterative
+Steps of the analytics process as aseries of sequential actions,it is more accurate to think of them as aset of interrelated actions that may be revisited frequently while working with a dataset
+
+## Analytics Techniques
+As analysts we use variety of techniques to draw conclusions from the data at their disposal.
+- ``Descriptive Analytics``
+- ``Predictive Analytics``
+- ``Prescriptive analytics``
+
+## Machine Learning,Artificial Intelligence,and Deep Learning
+* Work of analytics is intellectually and computationally demanding.
+* Machine Learning uses algorithms to discover knowledge in your datasets that you can then apply to help one make informed decisions about the future
+
+**Cases Where Machine Learning Commonly adds value:**
+- Segmenting customers and determining the marketing messages that will appeal to different customer groups.
+- Discovering anomalies in system and application logs that may be indicative of a cybersecurity incident
+- Forecasting product sales based on market and environmental conditions
+
+* ``Artificial Intelligence(AI)`` includes any type of technique whee you are attempting to get a compuer system to imitate human behavior
+* ``Machine Learning(ML)`` is a subset of AI techniques,ML techniques attempt to apply statistics to data problems in an effort to discover new knowledge,ML techniques are AI techniques designed to learn.
+* ``Deep Learning`` is a further subdivision of machine learning that uses quite complex techniques,known as neural networks ,it is a highly specialized subfield of machine learning that is most commonly used for image and sound analysis.
+![Screenshot 2024-04-09 111938](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/7b80094c-fdd9-4dcd-96d2-e3e9bd26f8cb)
+
+
