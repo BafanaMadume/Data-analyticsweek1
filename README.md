@@ -179,4 +179,9 @@ These tools automate much of the heavy lifting of data analysis,improving the an
 ## Exploring Data Types 
 
 * Data element is an attribute about a person,place ,or thing containing data within a range of values.Data elements also describe characteristics of activities ,including orders ,transactions and events.,the column headings name the data element ,while each row is an example value for that format
-* Data type limits the values a data element can have ,individual data types support structured,unstructured and semi-structured data 
+* Data type limits the values a data element can have ,individual data types support structured,unstructured and semi-structured data
+
+* 1 Tabular Data
+  - tabular data is data organized into a table,made up of columns and rows .a table represents information about a single topic
+  - Each **``column``** represents a uniquely named field within a table,also called a variable,about a single characteristics,contents of each column contain values for the data element as defined by the column header
+  - Each **``row``** represents a record of a single instance of the table's topic
