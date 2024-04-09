@@ -15,6 +15,9 @@
 ## Module 4 : Data Governance
 - Chapter 8: Defining Data Governance
 
+# MODULE 1 : THE BASICS OF DATA
+## Chapter 1: The data Aa
+
 # Data Analytics
 Domain of data analytics can be branched into two primary components:
 * conceptual understanding of data (theoretical aspect)
@@ -158,4 +161,22 @@ As analysts we use variety of techniques to draw conclusions from the data at th
 * ``Deep Learning`` is a further subdivision of machine learning that uses quite complex techniques,known as neural networks ,it is a highly specialized subfield of machine learning that is most commonly used for image and sound analysis.
 ![Screenshot 2024-04-09 111938](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/7b80094c-fdd9-4dcd-96d2-e3e9bd26f8cb)
 
+## DATA GOVERNANCE
+Data Governance programs ensure that the organization has high-quality data and is able to effectively control that data
 
+## ANALYTICS TOOLS
+These tools automate much of the heavy lifting of data analysis,improving the analyst's ability to
+* **``acquire``**
+* **``clean``**
+* **``manipulate``**
+* **``visualize and analyze data``**
+* **``Invaluable assistance in reporting and communicating results``**
+---
+---
+
+
+# Chapter 2: Understanding Data
+## Exploring Data Types 
+
+* Data element is an attribute about a person,place ,or thing containing data within a range of values.Data elements also describe characteristics of activities ,including orders ,transactions and events.,the column headings name the data element ,while each row is an example value for that format
+* Data type limits the values a data element can have ,individual data types support structured,unstructured and semi-structured data 
