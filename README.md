@@ -340,4 +340,47 @@ Text files are one of the the most commomly used data file formats.
 * when a file is comma-delimiited ,it is known as a **COMMA-SEPRATED VALUES**
 * When a file is tab-delimited it is called a tab-separated values(TSV)
 
-## Fi
+## Fixed-width Files
+* Fixed width files are more laborious to create since they require a few extra steps
+
+## JavaScript Object Notation
+* Javascript Object Notation(JSON) is an open standard file format, designed to add structure to a text file 
+  without incurring significant overhead.
+* json is easily readable by people and easily parsed by modern programming languages
+* Python ,R and Go have libraries containing functions that facilitate reading and writing JSON files.
+
+## Extensible Markup Language (XML)
+Is a markup language that facilitates structuring data in a text file
+* XML incurs more overhead because it makes extensive use of tags. Tags describe a data element and enclose each value for each data element.
+* Tags help readability ,they add a significant amount of overhead
+* XML was the data format of choice and facilitated Asynchronous JavaScript and XML (Ajax) web development techniques.
+
+## HyperText Makruo Language (HTML)
+*  is a markup language for documents designed to be displayed in a web browser.
+*  HTML pages serve as the foundation for how people interact with the World Wide Web. Similar to XML, HTML is a tag-based language.
+
+  # Module 2 : Data preparation and Exploration
+
+  # Chapter 3
+- Data Concepts and Environments
+- Identify basic concepts of data schemas and dimesions
+- Understanding the domain of data Mining
+- explain data acquisition concepts
+- Explain common techniques for data manipulation and query optimization
+
+  ## EXPLORING DATABASES
+  * TWo categories
+  * 1.Relational
+  * 2.Nonrelational
+
+  Databases fall into two categories,many of the systems we interact with daily produce tabular data .this is because tabular data is highly structured ,
+
+### The Relational Model
+* IBM's Edgar F.codd developed the relational model for database management,it builds on the concept of tabular data
+
+# Relational Database
+
+## Characteristics
+* Maki
+
+## Benefits
