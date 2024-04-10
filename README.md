@@ -246,3 +246,70 @@ character data type limits data entry to only valid characters .Characters can i
   - audio recordings
   - video recordings
   - open-ended survey responses
+* Analyzing unstructured data creates a wealth of information and insight.
+* Unstructured data type:
+* **``Binary``**
+  - most common data types for storing unstructure data.It supports any type of digital file you may have Microsoft Excel spreadsheets to digital photographs.
+  - When considering which binary data type to use ,file size tends to be the limiting factor.
+  - We need to select a data type that is as large as the largest file you plan on storing
+
+* **``Audio``**
+  - it can come from variety of sources
+  - The impact of capturing,storing,and analyzing audio data has led to the development of avalanche detection systems,These systems listen for and detect the acoustic characteristics of an avalanche,with real time notification capabilities,these systems reduces time it takes for emergency services to respond and alert hikers to treacherous condition
+  - Audio can be stored in its raw form which consumes most storage space.
+  - alternatively it can be encoded with compression algorithm to reduce the amount of space that is required
+  - Regardless of it it is in raw or compressed form,storing audio requires a data type designed to handle raw binary data
+* **``Images``**
+  - image data has applicability across several industries.
+  - Resolution is the most significant factor that governs how much space is required to store an image.The greater the resolution the more detail an image contains,and the more storage space it needs
+  - Similar to compressing audio data ,there are a variety of ways to encode and store images
+  - Storing images in a database requires a data type designed to handle raw binary data such as varbinary or BLOB
+* **``Video``**
+  - Video data is growing at a similar pace to image data,image processing algorithms examine videos to detect everything from traffic congestion to intruders in the home.
+  - Audio data,the resolution has a significant impact on storage a video consumes.Video duration is also another factor that impacts storage size.
+* **``Large Text``**
+  -oracle currently implents varchar as a synonym for varchar2
+
+---
+---
+# CATEGORIES OF DATA
+Semi-structured data represents the space between structured spreadsheets and unstructured videos
+
+### Quantitative vs Qualitative Data
+  - Quantitative data consists of numeric values,Data elements whose values come from counting or measuring are Quantitative
+  - Quantitative data answers question like "How Many" and "How Much"
+  - Qualitative data consists of frequent text values.Data elements whose values describe characteristics,traits and attitudes are all qualitative.
+
+### DISCRETE VS CONTINUOUS DATA
+- Numeric data comes in two different forms:discrete and continuous.
+- Discrete data is data that represents measurements that can't be subdivided.discrete data is useful when you have things you want to count.
+- It's typically represented with bar graphs where each bar represents a specific coun
+- When you measure things like height and weight,you are collecting continuous data.
+- While whole numbers represent discrete data ,continuous data typically need a decimal point.
+- Qualitative data is discrete,but quantitative data can be either discrete or continuous data
+- Discrete applies when counting while continuous applies when measuring.
+- It's typically visualized with line graphs or histograms, where the line or bars connect smoothly to show the 
+  range of possible values
+### CATEGORICAL DATA
+- Text data with a known ,finite number of categories is categorical,When considering an individual data element.it is possible to determine whether or not it is categorical
+- Categorical data, also known as qualitative data, is a different breed compared to discrete and continuous 
+  data. It doesn't deal with numbers representing quantities, but rather categorizes things based on qualities 
+  or labels
+- You can also use categories to enforce data validation when someone is first entering data.
+- Category enforcement has the effect of improving data quality
+
+### DIMENSIANAL DATA
+- Dimensional modeling is an approach to arranging data to facilitate analysis
+- Dimensional modeling organizes data into fact tables and dimension tables
+- A table holding appointment data would be called a fact table
+- Dimensions are tables that contain data about the fact
+- Dimensional data contains groupings of individual attributes about a given subject.
+
+## Common Data Structures
+data needs to be stored in a consistent ,organized manner.
+
+#### Structured Data
+- Tabular data is structured data ,with values stored in a consistent ,defined manner,it is organized into columns and rows.
+- Data is consistent when all entries in a column contain the same type of value(this particular method of organization facilitates aggregation)
+- Structured data also make summarization easy.
+- Structured data does not translate directly to data quality
