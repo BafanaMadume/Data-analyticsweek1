@@ -313,3 +313,28 @@ data needs to be stored in a consistent ,organized manner.
 - Data is consistent when all entries in a column contain the same type of value(this particular method of organization facilitates aggregation)
 - Structured data also make summarization easy.
 - Structured data does not translate directly to data quality
+
+#### UNSTRUCTURED DATA
+Unstructured data is qualitative ,describing the characteristics of an event or an object.**Images ,phrases,audio or video recording and descriptive text.** are all examples of unstructured data.
+* unstructured data also represents a significant opportunity.
+* Machine data is a common source of unstructured data.Machine data has various sources including internet of things devices,smartphones,tablets,personal computers and servers
+* The key-value concept underpins the design of object storage.The key becomes unique identifier and the value is the unstructured data itself
+* To access the contents of a file ,you need to know its key
+
+#### SEMI-STRUCTURED DATA
+* is data that has structure and that is not tabular.
+* Email is an example of semi structured formatting options.These formatting options use seprators or tags to 
+  provide context aroud a data element
+
+---
+## Common File Formats
+
+## Text Files
+A text file is a basic type of computer file that stores information as plain text. This means it contains only letters, numbers, symbols, and some basic formatting characters like newline breaks
+Text files are one of the the most commomly used data file formats.
+* They consist of plain text and are limited in scope to alphanumeric data
+* Reasons text files are so widely adopted is their ability to be opened regardless of platform or operating system without needing a proprietary piece of software.
+* When machines generates data ,the output is commonly stored in a text file
+* A unique character known as ``delimiter`` facilitates transmitting structured data via a text file,delimiter is the character that separates individual fields
+* Delimiter can be any character
+* when a file is 
