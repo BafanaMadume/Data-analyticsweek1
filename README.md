@@ -337,4 +337,7 @@ Text files are one of the the most commomly used data file formats.
 * When machines generates data ,the output is commonly stored in a text file
 * A unique character known as ``delimiter`` facilitates transmitting structured data via a text file,delimiter is the character that separates individual fields
 * Delimiter can be any character
-* when a file is 
+* when a file is comma-delimiited ,it is known as a **COMMA-SEPRATED VALUES**
+* When a file is tab-delimited it is called a tab-separated values(TSV)
+
+## Fi
