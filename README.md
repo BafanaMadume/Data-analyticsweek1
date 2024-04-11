@@ -380,7 +380,90 @@ Is a markup language that facilitates structuring data in a text file
 
 # Relational Database
 
-## Characteristics
-* Maki
+![Screenshot 2024-04-11 092350](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/49f915d0-872c-4dcd-8f66-bf6c7fc799d9)
+* Understanding that the header corresponds to the name of an entity.
+* Each row represents an individual attribute associated with a person.
+* Each of these entities becomes a separate table in the database,with a column for each attribute
+* Each row represents an instance of the entity
+* The power of the relational model is that it also allows us to describe how entities connect or relate ,to each other
 
-## Benefits
+#### Entity Relationship Diagram(ERD)
+* it is a visual artifact of the data modeling process.
+* it shows  the connection between related entities
+* A relationship is a connection between entities
+* Cardinality refers to the relationship between two entities,showing how many instance of entity relate to instance in another entity.
+* We specify cardinality in an ERD with various line endings
+* 1st Component of the terminator indicates whether the relationship between two entities is optional or required
+* 2nd Component indicates whether an entity instance in the first table is associated with a single entity instance in the related table or if an association can exist with multiple entity instances.
+
+![Screenshot 2024-04-11 094114](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/0c7fbed9-089e-4f8b-8e7a-328f3bc60e2d).
+
+* Unary Relationship is when an entity has a connection with itself
+* Binary Relationship connects two entities
+* Ternary Relationship connects three entities
+
+Binary relationship are most common and easy to explore ,whereas unary and ternary are comparatively complex and rare
+* The ability to read ERD's helps you understand the structure of a relational database
+* ERDS are useful when formulating how to retrieve information from the data that is spread across multiple tables ,becausethe diagrams allow you to visualizw the connections between entities.
+
+## RELATIONAL DATABASES
+Relational databses are pieces of software that let you make an operational system out of an ERD.
+* Start with relational model and create a physical design
+* Relational entities correspond to database tables ,and entity attributes corresponds to table columns
+* When creating a database table ,the ordering of columns does not matter because you can specify the column order when retrieving data from a table
+* When an attribute becomes a column ,you assign it a data type
+* Schema as an ERD with the additional details needed to create a database
+
+![Screenshot 2024-04-11 100607](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/1a3dee67-18da-43b3-8b5f-7cf4256f986b)
+
+* An associative table is both a table and a relationship.
+* An associative table lets us identify the relationship between a specific animal and a particular person with a minimun amount of data duplication.
+
+* A **``Primary key``** is one or more attributes that uniquely identify a specific row in a table
+* Synthethis primary key is an attribute whose only purpose is to contain unique values for each row in the table
+* Foreign key is one or more columns in one table that points to corresponding columns in a related table
+* A foreign key reference another table's primary.
+* Every row in a relational database must be unique
+* To pull data from a relational database table,you perform a query,we compose queries using a programming language called **Structured Query Language(SQL)**
+
+### Relational Database Providers
+* Oracle is one of the most mature databse platforms
+* Microsoft developed SQL  Server and the open source community created offerings including MySQL,MariaDB and PostgreSQL .Amazon Web Services (AWS) developed Aurora
+* Aurora is compatible with MySQL and PostgreSQL,Aurora is unique because it takes advantage of AWS's underlying cloud platform and is easy to scale
+
+
+## NONRELATIONAL DATABASES
+a nonrelational database does not have a predefined structure based on tabular data.result is a highly flexible approach to storing data.the Data types available in relational databases are absent.
+
+## EXAMPLES OF NONRELATIONAL DATABASE
+* it includeas key-value,document,column family and graph.
+
+ ### KEY-VALUE
+ -  database is one of the simplest ways of storing data,data is stored as a collection of keys and their corresponding values
+ - A key must be globally unique across the entire database.The use of keys differs from a relational database,where a given key identifies an individual row in a specific table
+ - There are no structural limits on the values of a key.
+ - A key can be a sequence of numbers,alphanumeric strings or some other combination of values,
+ - Data that corresponds with the key can be any structured or unstructured data type
+ -  One reason for choosing a key-value database is when you have lots of data and can search by a key's value.
+
+### DOCUMENT
+
+* A document database is similar to key-value database ,with additional restrictions in a key-value data,the 
+  value can contain anything.
+* with document database the value is restricted to a specific structured format
+* With a known, structured format, document databases have additional flexibility beyond what is possible with key-value.
+*  The document key is the profile name.
+
+### Column Family
+* Column-family databases use an index to identify data in groups of related columns.
+* This design facilitates distributing data across multiple machines, which enables handling massive amounts of data
+* The ability to handle large data volumes is due to the technical implementation details of how these databases organize and store
+* column-family databases optimize performance when you need to examine the contents of a column across many rows. The main reason for choosing a column-family database is its ability to scale
+
+### Graph
+* Graph databases specialize in exploring relationships between pieces of data.
+* Relational models focus on mapping the relationships between entities. Graph models map relationships between actual pieces of data.
+
+# DATABASE USE CASES
+transactional and reporting systems need different implementation approaches to serve the people who use them efficiently
+* Databases tend to support two major categories of data processing:``Online Transactional Processing(OLTP)`` and `` Online Analytical processing(OLAP)``
