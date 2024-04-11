@@ -472,4 +472,56 @@ transactional and reporting systems need different implementation approaches to 
 
 * OLTP  systems handle the transactions we encounter everyday,e.g transactions include booking a flight reservation,ordering something online.or executing  A STOCK TRADE
 * While a number of transactions a system handles on a given day can be high,individual transactions process small amounts of data
-* OLTp systems balance the bility to write and read data efficiently
+* OLTP systems balance the ability to write and read data efficiently
+
+# Normalization
+Description = Normalization is a process for structuring a database in a way that minimizes duplication iof data
+
+* one of the principles is that a given piece of data is stored once and only once,
+* Normalized database is ideal for processing transactions.
+
+### First normal form(1NF)
+*  is when every row in a table is unique and every column contains a unique value.
+![Screenshot 2024-04-11 133031](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/12c1185f-bfde-420f-ae0c-6d59caa1868f)
+
+### Secod normal form(2NF)
+starts when 1NF leaves off.in addition to each row being unique,2nf applies an additional rule stating that all nonprimary key values must depend on the entire primary key
+* it eliminates partial dependencies:a partial dependency occurs when a non-key attribute ,which is an attribute not part of the primary key) it relies on only part of the primary ,not the entire key to determine its value
+ ![Screenshot 2024-04-11 134152](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/2f1eaf41-5235-4085-95a6-85cfd59ac542).
+
+### Third normal form(3NF)
+builds upon 2NF by adding a rule stating all columns must depend on only the primary key.
+* A table must be in 2NF (follows the rules of 1NF and eliminates partial dependencies).
+It eliminates transitive dependencies. A transitive dependency occurs when a non-key attribute (attribute not part of the primary key) relies on another non-key attribute, which in turn depends on the primary key, to determine its value
+* Databases in 3NF are said to be highly normalized
+
+---
+
+## ONLINE ANALYTICAL PROCESSING
+OLAP systems focus on the ability of organzition to analyze data.While OLAP and OLTP databases need to balance transactional read and write performance,which results in highly normalize design.Typically, OLTP databases are in 3NF 
+* Databases that power OLAP systems have a denormalized design.so instead of having data distributed across multiple tables,denormalization results in wider tables than those found in an OLTP database.
+* it is more efficient for analytical queries to read large amounts of data for a singe table instead of incurring the cost of joining multiple tabes together.
+* The greater the number of joins ,the more complex the query .The more complex the query ,the longer it takes to retrieve results
+---
+---
+
+# Schema Concepts
+* Design of a database schema depends on the purpose it serves
+* transactional systems require highly normalized databaseswhereas a denormalized design is more appropriate for analytical systems
+* ``Data warehouse`` is a database that aggregates data from many transactional systems for analytical purposes
+* Transactional data may come from systems that power the human resources, sales ,marketing and product divisions
+* A ``data warehouse`` facilitates analytics across the entire company.
+* ``Data mart`` is a subset of a data warehouse,
+* Data warehouses serve the entire organization and data marts focus on the needs of a particular department within the organization
+* A data lake stores raw data in its native format instead of conforming to a relational database structure
+* ``Data lake`` is more complex than a data warehouse or data mart ,and requires additional knowledge about the raw data to make it analytically useful
+* Relational databsases enforces a structure that encapsulates business rules and business logic
+
+#### DIFFERENCE BETWEEN DATABASES AND DATA WAREHOUSES
+* Databases are designed for transactions , Data Warehouses are designed for analytics and reporting
+* Databases data is fresh and detailed , Data warehouses data is refreshed periodically and summarized
+* Databases work slowly for querying large amounts of data and can slow down transactional processes.Data Warehouses don't interfere with any processes and are generally faster
+
+## Star Schema
+is designed to facilitate analytical processing ,
+* Star schemas are denormalized to improve read performance over large datasets
