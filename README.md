@@ -467,3 +467,9 @@ a nonrelational database does not have a predefined structure based on tabular d
 # DATABASE USE CASES
 transactional and reporting systems need different implementation approaches to serve the people who use them efficiently
 * Databases tend to support two major categories of data processing:``Online Transactional Processing(OLTP)`` and `` Online Analytical processing(OLAP)``
+
+## ONLINE TRANSACTIONAL PROCESSING
+
+* OLTP  systems handle the transactions we encounter everyday,e.g transactions include booking a flight reservation,ordering something online.or executing  A STOCK TRADE
+* While a number of transactions a system handles on a given day can be high,individual transactions process small amounts of data
+* OLTp systems balance the bility to write and read data efficiently
