@@ -525,3 +525,14 @@ OLAP systems focus on the ability of organzition to analyze data.While OLAP and 
 ## Star Schema
 is designed to facilitate analytical processing ,
 * Star schemas are denormalized to improve read performance over large datasets
+* At the centre of the star is a fact table
+* Fact table stores numerical facts about a business.
+  ![Screenshot 2024-04-11 150707](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/27675ca2-f1b5-4da9-89fb-129987927b68)
+
+## Snowflake
+Data warehouses often use snowflake schemas, since many different systems supply data to the warehouse.
+
+## DIMENSIONALITY
+it refers to the number of attributes a table has.The greater the number of attributes the higher the dimensianality
+* A Dimension table provides additional context around data in fact tables.
+* One dimension you will frequently encounter is time. It is necessary to answer questions about when something happened or when something was true.
