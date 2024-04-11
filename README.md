@@ -536,3 +536,33 @@ Data warehouses often use snowflake schemas, since many different systems supply
 it refers to the number of attributes a table has.The greater the number of attributes the higher the dimensianality
 * A Dimension table provides additional context around data in fact tables.
 * One dimension you will frequently encounter is time. It is necessary to answer questions about when something happened or when something was true.
+---
+---
+
+# DATA ACQUISITION CONCEPTS
+
+#### Integration
+Data frim transactional systems flow into data warehouses and data marts for anlysis
+* We need to retrieve ,reshape and insert data to move data between operational and analytical environments
+
+  variety of methods to transfer data efficiently and effectively
+  * Extract,Transform and Load (ETL)
+
+1. **Extract** =  extract data from the source system and place it in a staging area,The goal of the extract phase is to move data from a relational database into a flat file as quickly as possible
+2. **Transform** = Transform the data,goal is to reformat the data from its transactional structure to the data warehouse's analytical design
+3. **Load** : The purpose of the load phase is to ensure data gets into the analytical systems as quickly as possible.
+* data is extracted from a source database and loaded directly into the data warehouse.
+* Once the extract and load phases are complete, the transformation phase gets underway.
+* One key difference between ETL and ELT is the technical component performing the transformation.
+* With ETL, the data transformation takes place external to a relational database, using a programming language like Python. ELT uses SQL and the power of a relational database to reformat the data
+* ELT has an advantage in the speed with which data moves from the operational to the analytical database.
+
+## Data Collection Methods
+Augmenting data from your transactional systems with external data is an excellent way to improve the analytical capabilities of your organization,internal data is a good place to start when analyzing how to grow your business.
+* To improve the accuracy of your analysis, you want to include data about the weather, tourism, and your competitors.
+
+### 1. APPLICATION PROGRAMMING INTERFACES(APIs)
+ Is a structured method for computer systems to exchange information,it provides a consistent interface to calling applications,regardless of the internal databsae structure
+ * APIs can be transactional ,returning data as json objects
+ * Apis provide a consistent interface to calling applications
+ * 
