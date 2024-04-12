@@ -564,5 +564,24 @@ Augmenting data from your transactional systems with external data is an excelle
 ### 1. APPLICATION PROGRAMMING INTERFACES(APIs)
  Is a structured method for computer systems to exchange information,it provides a consistent interface to calling applications,regardless of the internal databsae structure
  * APIs can be transactional ,returning data as json objects
- * Apis provide a consistent interface to calling applications
- * 
+ * APIs provide a consistent interface to calling applications
+ * APIs can be transactional,returning data as JSON objects
+ * APIs can also facilitate bulk data extraction,returning CSV files.
+
+### 2. WEB SERVICES
+A web service is an API you can call via Hypertext Transfer Protocol(HTTP) ,the language of the world wide Web
+* A While web service is an API ,an API does not have to be a web service.
+
+### 3. Web Scraping
+* if data exists in a structured format ,you can retrieve it programmatically ,Programmatic retrieval of data from a website is knwon as web scraping.
+* We can use software bots to scrape data from a website
+* Web scraper reads a web page similar to a browser, such as Chrome, Safari, or Edge
+* Web Scrapers read and parse the HTML to extract the data the web pages contain
+* Web scraper has to account for pagination to ensure that you are leaving data behind.
+* Scraper must understand how many result pages exist and then iterate through them to harvest the data.
+
+### 4. HUMAN - IN-THE LOOP
+
+### 5. SURVEYS
+* One way to collect data directly from your customers is by conducting a survey
+* You can design surveys to achieve your data collection goals and your audience
