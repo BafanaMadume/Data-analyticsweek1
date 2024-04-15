@@ -298,7 +298,7 @@ Semi-structured data represents the space between structured spreadsheets and un
 - You can also use categories to enforce data validation when someone is first entering data.
 - Category enforcement has the effect of improving data quality
 
-### DIMENSIANAL DATA
+### DIMENSIONAL DATA
 - Dimensional modeling is an approach to arranging data to facilitate analysis
 - Dimensional modeling organizes data into fact tables and dimension tables
 - A table holding appointment data would be called a fact table
@@ -577,6 +577,7 @@ A web service is an API you can call via Hypertext Transfer Protocol(HTTP) ,the 
 * A While web service is an API ,an API does not have to be a web service.
 
 ### 3. Web Scraping
+Web scraping  is the process of automatically extracting data from websites.
 * if data exists in a structured format ,you can retrieve it programmatically ,Programmatic retrieval of data from a website is knwon as web scraping.
 * We can use software bots to scrape data from a website
 * Web scraper reads a web page similar to a browser, such as Chrome, Safari, or Edge
@@ -697,3 +698,102 @@ IFF function follows tge syntax:
 * To speed up query performance, you need a database index.
 *  A database index works like the index in the back of a book. Instead of looking at each page in a book to find what you are looking for,you can find a specific page number in the index and then go to that page
 * database index can point to a single column or multiple columns. 
+
+---
+---
+# CHAPTER 4 
+## DATA QUALITY
+
+### DATA QUALITY CHALLENGES
+
+#### DUPLICATE DATA
+It occurs when data representing the same transaction is accidentally duplicated within a system
+* one common way of stopping duplicate data before it enters the system is to have a visual warning to alert
+* Having multiple data sources for the same data elements is also a source of duplicate data.
+
+#### Redundant Data
+* Redundant data happens when the same data elements exist in multiple places within a system
+* Data redundancy is a function of integrating multiple systems
+* Ways to resolve redundant data,one approach is to synchronize changes to shared data elements between the Accounting and sales systems.
+* The ETL logic ensures that the warehouses contains correct values
+* Another Root cause of data redundancy is an inappropriate database design
+
+#### Missing Values
+* Missing values occur when you expect an attribute to contain data but nothing is there
+* Missing values are known as null values,A null value is the absence of a value.
+* A null is not a space,blank,or other character
+* When a column optionally contains data,it is nullable ,meaning the column can contain null values
+* Null values present several challenges depending on the tools you use to analyze data
+* To handle missing values,we must first check for their existence.
+* SQL offers functions to check for null and functions that can replace a null with a user-specified value.
+
+#### INVALID DATA
+invalid data are values outside the valid range for a given attribute
+* Invalid value violates a business rule instead of having an incorrect data type
+* Wehave to understand the context of a system to determine whether or not a value is invalid
+* Text data is more complex,one thing that leads to invalid character data is an absence of referential integrity within a database
+* if two tables have a relationship but no foreign keys,the conditions for invalid character data exist.Implementing relationships appropriately reduces the likelihood of invalid character data
+* implementing referential integrity is an excellnt way to improve data quality.
+
+#### NONPARAMETRIC DATA
+
+Nonparametric data is data collected from categorical variables ,the rank order of the values is of significance ,not the individual values themselves
+
+#### DATA OUTLIERS
+
+A data outlier is a value that differs significantly from other observations in a dataset
+* Outliers exist regardless of data type
+
+#### SPECIFICATION MISMATCH
+
+Specification describes the target value for a component,A specification mismatch occurs when an individual component's characteristics are beyond the range of acceptable values
+* When data is invalid ,it has values that fall outside a given range,Specification mismatch occurs when data does not conform to its destination data type
+* if Destination column is numeric and you have text data ,to resolve mismatch you must validate that the inbound data consistently maps to its target data type
+
+#### DATA TYPE VALIDATION
+* Data type validation ensures that values in a datasets have a consistent data type
+* How the load process handles the data type validation failure determines whether or not the remaining rows load successfully.Depending on the tool ,a single failure may cause the load process to stop
+* Programming languages ,SQL ,python and R all have data type validation functions.
+* Use these functions to validate the data type for each column in a data file before attempting a database load
+* it is the best interest to detect and remediate data type issues as early as possible to ensure data is ready for analysis
+
+# Data Manipulation Techniques
+
+## Recoding Data
+* Recoding data is a technique you can use to map original values for a variable into anew values facilitate analysis
+* Recoding groups data into multiple categories ,creating a categorical variable
+* A categorical variable is either nominal or ordinal.
+* Nominal variables are any variables with two or more categories where there is no natural order of the categories
+* Oridinal cariables are categories with an inherant rank.
+
+## Derived Variables
+* A derived variable is a new variable resulting from a calculation on an existing variable
+* Derived variables don't have to be categorical
+
+## DATA Merge
+it uses a common variable to combine multiple datasets with different structures into a single datasets
+* Merging data improves data quality by adding new variables to your existing data
+* Additional variables make for a richer dataset ,this positively impacts the quality of your analysis
+* ETL processes commonly append data while transforming data for use in analytical environment.
+* Since a data merge adds columns to a dataset, merging gives you additional data about a specific observation.
+
+## Data Blending 
+Data blending combines multiple sources of data into a single dataset at the reporting layer.While data bl;ending is conceptually similar to extract ,transform and load process
+* Data Blending differs from ETL in that it allows an analyst to combine datasets in an ad hoc manner without saving the blended datasets in a relational database.
+
+## Concatenation
+Concatenation is the merging of separate variables into a single variable. Concatenation is a highly effective technique when dealing with a source system that stores components of a single variable in multiple columns.
+* Concatenation frequently occurs when dealing with date and time data.
+* Concatenation is also useful when generating address information.
+
+## Data Append
+A data append combines multiple data sources with the same structure, resulting in a new dataset containing all the rows from the original datasets. 
+* When appending data, you save the result as a new dataset for ongoing analysis.
+
+## Imputation
+Imputation is a technique for dealing with missing values by replacing them with substitutes. 
+* Merging multiple data sources, you may end up with a dataset with many nulls in a given column.
+  
+### Approaches an analyst can use for imputing values:
+
+1. Remove Missing Data:
