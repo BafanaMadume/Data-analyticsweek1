@@ -379,8 +379,12 @@ Is a markup language that facilitates structuring data in a text file
 * IBM's Edgar F.codd developed the relational model for database management,it builds on the concept of tabular data
 
 # Relational Database
-
+Relational databases are a fundamental type of database that store and organize data in a structured way. They follow a specific model based on tables and relationships between those tables, making data retrieval and manipulation efficient
 ![Screenshot 2024-04-11 092350](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/49f915d0-872c-4dcd-8f66-bf6c7fc799d9)
+Relational Model:
+
+Data is organized into tables (also called relations). Each table represents a specific entity or concept, like customers, orders, or products.
+Tables consist of rows and columns. Rows represent individual records (instances of the entity), and columns represent attributes (specific characteristics of the entity). For instance, a Customer table might have rows for each customer and columns for attributes like name, address, and email.
 * Understanding that the header corresponds to the name of an entity.
 * Each row represents an individual attribute associated with a person.
 * Each of these entities becomes a separate table in the database,with a column for each attribute
