@@ -585,3 +585,111 @@ A web service is an API you can call via Hypertext Transfer Protocol(HTTP) ,the 
 ### 5. SURVEYS
 * One way to collect data directly from your customers is by conducting a survey
 * You can design surveys to achieve your data collection goals and your audience
+
+---
+---
+## Working With Data
+* To turn a database into an operational database ready to accept data,you use the **Data Definition Language (DDL)** components of SQL
+* DDL lets you create ,modify and delete tables and other associated database objects
+* To generate insights ,a productive analyst must be comfortable using the Data Manipulation Language(DML) capabilities of SQL to
+* Insert ,Modify and retrieve information from databases
+* DDL manages the structure of a database,DML manages the data in the database
+
+### DATA MANIPULATION
+* so when manipulating data ,one of four possible occurs
+* 1. Create new data
+  2. Read existing data
+  3. update existing data
+  4. Delete existing data
+* **CRUD(Create,Read,Update,Delete)**
+* SQL uses verbs to identify the type of activity a specific statement performs,and for each CRUD activity there is a corresponding DML verb
+![Screenshot 2024-04-11 150707](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/fd4363d6-85af-4e10-bfab-9a0ea29315f2)
+*
+Basic structure of SQL query that reads from a database ,SELECT , FROM and WHERE are all reserved words that have specific meanings in SQL
+![Screenshot 2024-04-15 092802](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/38acafb2-ed88-4b6a-9caf-7d5a69493a9d)
+
+* SELECT clause identifies the columns from the table(s) that are retrieved
+* FROM clause in a query identifies the sources of data,which is frequently a database table
+* SELECT AND FROM clauses are required for a SQL statement to return.
+
+### SQL CONSIDERATIONS
+SQL are case-insensitive,howeve the case sensitivity of column names and values depend on the database configuration
+
+### FILTERING 
+Filtering is a way to reduce the data down to only the rows that you need
+* To filter data ,you add a WHERE clause to a query,but the column you are filtering on does not have to appear in the SELECT clause
+
+SELECT Animal_Name ,Breed_Name
+
+From Animal
+
+Where Animal_Type = 'Dog'
+
+### FILTERING AND LOGICAL OPERATORS
+We need to use a logical operator to account for complex filtering needs
+* We can enhance the query using the AND logical operator
+
+SELECT Animal_Name.Breed_Name
+
+FROM Animal
+
+WHERE Animal_Type = 'Dog'
+
+AND Weight > 60
+
+*A AND operators evaluates the Animal_Type and Weight filters together
+* OR is also used E.G we want to see the name and breed for all dogs and any animal that weigh more than 10 pounds regardless of the animal type
+
+SELECT Animal_Name , Breed_Name
+
+FROM Animal
+
+WHERE  Animal_Type = 'Dog'
+
+OR Weight > 10
+
+### SORTING
+* ORDER BY clause is component that makes sorting possible.it is similar to WHERE clause performs,you don't have to specify the colums you are using to sort the data in the SELECT clause
+* ASC orderBy clause sorts in ascending order
+* DESC with Order By sorts in descending order
+
+### Date Functions 
+* date columns are frequently found in OLAP environments
+* Date columns also appear in transactional systems
+* Storing date information about an event facilitates analysis across time
+* The most important thing to note is that you have to understand the database platform you are using and how that platform handles dates and times
+
+### Logical Functions
+* Logical functions can make data substitutions when retrieving data
+* Data in the underlying tables do not change when SELECT runs
+
+IFF function follows tge syntax:
+* IFF(boolean_expression,true_value,false_value)
+
+1. Boolean Expression : The expression must return either TRUE or FALSE
+2. TRUE Value : If the Boolean expression returns TRUE, the IFF function will return this value
+3. False Value : If the Boolean expression returns FALSE, the IFF function will return this value.
+
+## AGGREGATE FUNCTIONS
+*  Aggregate functions summarize a query's data and return a single value.
+
+![Screenshot 2024-04-15 092704](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/1285b404-03aa-4cef-9a10-fb1a27d6d48b)
+
+### SYSTEM FUNCTIONS
+
+* current data is a component of transactional records and enables time-based analysis in the future
+* Current data is also necessary for a systems that uses an effective data approach.
+* A database session begins when a person/program connects to a database.
+
+### Query Optimization
+
+##### PARAMETRIZATION
+* Parsing translates the human-readable SQL into code the database understands.
+* Parsing takes time and impacts how long it takes for a query to return data.
+* Effective use of parameterization reduces the number of times the databases has to parse individual queries.
+
+##### INDEXING
+* When retrieving data from a table, the database has to scan each row until it finds the ones that match the filters in the WHERE clause.
+* To speed up query performance, you need a database index.
+*  A database index works like the index in the back of a book. Instead of looking at each page in a book to find what you are looking for,you can find a specific page number in the index and then go to that page
+* database index can point to a single column or multiple columns. 
