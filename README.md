@@ -907,3 +907,67 @@ Dimensionality reduction is a technique for removing attributes that are not rel
 ### Describe how you can enforce data validity. 
 
 Data validity is the data quality dimension that identifies whether a given value falls within an expected range. Combining referential integrity in the database with data type validation is a layered approach to ensuring only valid data gets into a system.
+
+---
+---
+# Chapter 5 
+## Data Analysis and Statistics
+
+Descriptive stattistics is a branch of statistics that summarizes and describes data. You use descriptive statistics as measures to help you understand the characteristics of your dataset
+*You also use descriptive measures to develop summary information about all of a variable's observations.
+
+### Measures of Frequency
+it helps ou understand how often something happens.so when encountering a dataset you want to determine how much data you are working with in order to help guide your analysis
+
+1. ``Count``= count the number of observations and understanding the total number of observations is a frequently performed task
+![Screenshot 2024-04-16 132818](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/dc52cb44-bc03-423e-93fb-758a42563684)
+2.``Percentage`` = The percentage is a frequency measure that identifies the proportion of a given value for a variable with respect to the total number of rows in the dataset,calculate a percentage, you need the total number of observations and the total number of observations for a specific value of a variable.
+3. ``Frequency`` = Frequency describes how often a specific value for a variable occurs in a dataset. typically explore frequency when conducting univariate analysis.
+
+### Measures of Central Tendency
+help establish an overall perspective on a given dataset,use measures of central tendency to identify the central, or most typical, value in a dataset.
+
+1. **``Mean``** = mean, or average, is a measurement of central tendency that computes the arithmetic average for a given set of numeric values. To calculate the mean, you take the sum of all values for an observation and divide by the number of observations,In the comparatively unlikely event that you have a complete census for your population
+![Screenshot 2024-04-16 134745](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/b9e80f1c-4caa-4ab5-ab93-843fcc9a8343)
+2. **``Median``** median, which identifies the midpoint value for all observations of a variable. The first step to calculating the median is sorting your data numerically.
+  ![Screenshot 2024-04-16 135000](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/5701fc01-dc9b-413a-aaac-d6f6735b7be0)
+3. **``Mode``** = The mode is a variable's most frequently occurring observation.
+
+### Measures of Dispersion
+measures of dispersion to create context around data spread.                                             
+1.**``Range``**=range of a variable is the difference between its maximum and minimum values.Understanding the range helps put the data you are looking at into context and can help you determine what to do with outlier values.
+
+2. **``Distribution``** = a probability distribution, or distribution, is a function that illustrates probable values for a variable, and the frequency with which they occur,Histograms are an effective tool to visualize a distribution, because the shape provides additional insight into your data and how to proceed with analysis.
+
+3. **``Normal distribution``** = is symmetrically dispersed around its mean, which gives it a distinctive bell-like shape. Due to its shape, the normal distribution is also known as a “bell curve.”, normal distribution is applicable across a number of disciplines due to the central limit theorem (CLT), a foundational theorem for statistical analysis.
+   
+4. **``Skewed Distribution``**=skewed distribution has an asymmetrical shape, with a single peak and a long tail on one side. Skewed distributions have either a right (positive) or left (negative) skew.
+   -  right, the mean is typically greater than the median
+   -  left , the mean i typically less than the median
+
+5. **``Bimodal Distribution``** =bimodal distribution has two distinct modes, whereas a multimodal distribution has multiple distinct modes. When you visualize a bimodal distribution, you see two separate peaks.
+
+6. **``Variance``**=Variance is a measure of dispersion that takes the values for each observation in a dataset and calculates how far away they are from the mean value. dispersion measure indicates how spread out the data is in squared units. Mathematically,  signifies population variance, which you calculate by taking the average squared deviation of each value from the mean,
+![Screenshot 2024-04-16 142232](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/16df62a9-431b-4325-b12e-434ab8cf203c)
+![Screenshot 2024-04-16 142245](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/9b0354a3-bb82-4c0a-8710-6698ad6bb42d)
+
+7. **``Standard Deviation``**=Standard deviation is a statistic that measures dispersion in terms of how far values of a variable are from its mean.Specifically, standard deviation is the average deviation between individual values and the mean. Mathematically,  signifies population standard deviation, which you calculate by taking the square root of the variance
+![Screenshot 2024-04-16 142858hnmdgf](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/bf482efc-dde4-4ded-85f9-65f22519ad9a)
+x![Screenshot 2024-04-16 142914](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/de9922cc-02e7-4834-9a81-f0b135d4d580)
+
+* calculating variance is an important step on the way to determining standard deviation. Similar to variance, the standard deviation is a measure of volatility, with a low value implying stability.
+
+### Each Sample is Unique
+
+1. **``Special Normal Distributions``**= Central Limit Theorem and empirical rule combine to make the normal distribution the most important distribution in statistics.
+2. **``Standard Normal Distribution``** =  standard normal distribution, or Z-distribution, is a special normal distribution with a mean of 0 and a standard deviation of 1.
+3. **``Student's T-Distribution``**=Student's t-distribution, commonly known as the t-distribution, is similar to the standard normal distribution in that it has a mean of 0 with a bell-like shape. One way the t-distribution differs from the standard normal distribution is how thick the tails are since you can use the t-distribution for sample sizes of less than 30
+
+## Measure of Positions
+Understanding a specific value for a variable relative to the other values for that variable gives you an indication of the organization of your data.
+* The process of obtaining quartiles is similar to that of determining the median. You first sort a numeric dataset from smallest to largest and divide it positionally into four equal groups. Each grouping is known as a quartile.
+* The first quartile is the group that starts with the minimum value, whereas the fourth quartile is the group that ends with the maximum value.
+
+---
+0710645461
+# iNFERENTIAL sTATISTICS
