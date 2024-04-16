@@ -796,4 +796,68 @@ Imputation is a technique for dealing with missing values by replacing them with
   
 ### Approaches an analyst can use for imputing values:
 
-1. Remove Missing Data:
+1. **``Remove Missing Data``**: with this approach ,you can remove rows with missing values without impacting the quality of your overall analysis
+2. **``Replace With Zero``**: we replace missing values with a zero ,whether or not it is appropriate to replace missing data with a zero is contextual.
+3. **``Replace with overall``** Average: instead of using a zero ,you can compute average weight value for all rows that have data and then replace the missing weight values with that calculated average.
+4. **``Replace with Most Frequent (mode)``**: we take the most frequently occuring value ,called the mode ,and use that as the constant
+5. **``Closest Value Average``** : with this approach you use values from the rows before and after the missing values
+
+## Reduction
+So when dealing with big data .it is frequently unfeasible and inefficient to manipulate the entire dataset during analysis
+* **Reduction** is the process of shrinking an extensive dataset without negatively impacting its analytical value
+* ``Dimensionality reduction`` and ``numerosity reduction`` are two techniques for data reduction.
+
+**``DIMESIONALITY REDUCTION``**
+  removes attributes from a dataset.Removing attributes reduces the dataset's overall size
+
+**``NUMEROSITY REDUCTION``**
+it reduces the overall volume of data,numerosity reduction can improve the efficiency of your analysis
+* one way to reduce the volume of quantitative data is by creating a histogram.
+* Histogram is a diagram made up of rectangles or bars that shows how frequently a specific value occurs
+
+Another approach to reduce data is through sampling,sampling is a technique that selects a subset of individual records from the initial dataset
+
+
+### 1. Aggregation
+is the summarization of raw data for analysis .Aggregating data provides answers that help make decision .Aggregation also means controlling privacy.
+### 2. Transposition
+transposing data is when you want to turn rows into columns or columns into rows to facilitate analysis.
+### 3. Normalization 
+normalizing data converts data from different scales to the same scale ,if one wants to compare whose measurements use different units,you want to normalize the data,after normalization the dataset is ready for statistical analysis
+### 4 Min-Max Normalization
+![Screenshot 2024-04-16 100945](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/79a2a0fc-fa8a-4a74-bfe1-fc5343ee1c94)
+![Screenshot 2024-04-16 101028](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/c3cd2838-42fd-4561-86f4-2b67dbf87ada)
+
+### Parsing/String Manipulation
+Raw data can contain columns with composite or distributed structural issues.
+A composite issue is when a raw data source has multiple, distinct values combined within a single character column.
+Composite columns need to be split into their component parts to aid analysis.
+
+# Managing Data Quality
+as an analyst you must recognize scenarios that create he conditions for data quality issues.
+
+### Circumstances to check for Quality.
+* Errors during data **acquisition**, **transformation**, **manipulation**, and **visualization** all contribute to degrading data quality
+* **``Data acquisition``**
+* **``Data Transformation and conversion``**
+* **``Data Manipulation``**
+* **``Final product preparation``**
+
+### DATA QUALITY DIMENSIONS
+six dimensions to take into account when assessing data quality are accuracy ,completeness ,consistency ,timeliness ,uniqueness and validity .By understanding these dimensions and how they are related will help improve data quality.
+
+ 1. **``Data Accuracy``** = refers to how closely data reflects the real world. For example, an accurate customer address would allow a company to send products to the correct location.
+  2. **``Data copmpleteness``** = refers to whether all of the necessary data is present. For example, a complete customer record would include the customer's name, address, and phone number.
+  3. **``Consistency``** =  refers to whether data is consistent within itself and across different systems. For example, a customer's name should be spelled the same way in all of the company's databases.
+  4. **``Data Timeliness``** = refers to how up-to-date data is. For example, a company's financial data should be timely so that it can be used to make informed business decisions.
+  5. **``Data Uniqueness``** = refers to whether each record in a data set is unique and can be easily identified. For example, each customer should have a unique customer ID.
+  6. **``Validity``**=  refers to whether data meets the defined standards for its format and content. For example, a customer's email address should be in a valid format.
+
+### Data Quality Rules and Metrics
+* When consolidating data from multiple source systems into an analytics environment, one factor you want to assess is the conformity or nonconformity of data.
+* if source data does not match the destination data type size and format ,you have nonconformity.
+* The Warehouse Load ETL needs to ensure consistency as it propagates data from these source systems into the Data Warehouse to ensure data quality.
+* This nonconformity presents an ETL challenge.
+* One way to validate data conformity issues is to confirm how many rows pass successfully to the target environment and how many fail
+* . A data engineer then resolves the root cause of the data quality issue before sending the remediated data into the Data Warehouse.
+*  the nonconformity of a single row does not cause the entire load process to fail.
