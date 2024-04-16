@@ -861,3 +861,49 @@ six dimensions to take into account when assessing data quality are accuracy ,co
 * One way to validate data conformity issues is to confirm how many rows pass successfully to the target environment and how many fail
 * . A data engineer then resolves the root cause of the data quality issue before sending the remediated data into the Data Warehouse.
 *  the nonconformity of a single row does not cause the entire load process to fail.
+
+### Methods To Validate Quality
+
+1. **Reasonable Expectation:**  This refers to setting realistic goals for data quality based on its intended use.  Not all data needs to be absolutely perfect.  For example, mailing list data might have a slightly higher tolerance for duplicates compared to financial transaction data. 
+
+2. **Data Profiling:** This involves analyzing data to understand its statistical properties.  Data profiling tools summarize key characteristics like:
+    * **Value Distribution:** How data points are spread across the spectrum (e.g., most customers are between 25-45 years old).
+    * **Presence of Duplicates:** Identifying and quantifying records that appear identical.
+    * **Identification of Outliers:**  Values that fall far outside the expected range (e.g., a sale of $1 million when typical sales are under $1000).
+
+Data profiling helps identify potential issues with accuracy, completeness, and consistency.
+
+3. **Data Audits:**  This is a systematic review of data quality controls and procedures.  Data audits assess:
+    * **Data Collection Methods:**  Are there proper procedures for gathering data? 
+    * **Data Storage:**  Is data stored securely and with limited access?
+    * **Data Documentation:**  Is data clearly defined with understandable formats and standards?
+    * **Data Security:**  Are there safeguards in place to protect data from unauthorized access or modification?
+
+Data audits ensure data is managed effectively and meets compliance requirements.
+
+4. **Sampling:** This involves selecting a subset of data from a larger dataset to assess its quality.  Sampling is useful when dealing with very large datasets as analyzing everything might be impractical.  There are different sampling techniques,  like random sampling (selecting data points at random) or stratified sampling (ensuring the sample reflects the proportions of the entire dataset).
+
+By analyzing a representative sample, you can gain insights into the overall quality of the data.
+
+5. **Cross Validation:** This is a statistical technique used to evaluate the performance of a model.  It involves splitting the data into two sets: a training set used to build the model and a testing set used to assess its accuracy on unseen data.  Cross-validation helps ensure the model generalizes well and doesn't simply memorize the training data.
+
+## EXAM PREPARATION 
+### Describe the unique challenge of missing data values. 
+
+A missing value is the absence of a value. Regardless of the programming language you use to manipulate data, you need additional checks to account for the lack of a value. You cannot compare values to the absence of a value. Instead, you first have to determine whether or not a value exists before doing the comparison.
+
+### Describe why it is crucial to account for data outliers. 
+
+An outlier is an observation whose value differs significantly from other observations of the same type. Leaving outliers in your data can negatively impact the quality of your analysis.
+
+### Describe the difference between data merging and data blending. 
+
+Both data merging and data blending combine data sources. However, data merging combines sources programmatically, typically through an ETL operation. Data blending is when an analyst merges data temporarily while exploring or visualizing data.
+
+### Differentiate between dimensionality and numerosity reduction. 
+
+Dimensionality reduction is a technique for removing attributes that are not relevant for the analysis at hand. Numerosity reduction is a technique for reducing the overall size of a dataset to facilitate processing efficiency.
+
+### Describe how you can enforce data validity. 
+
+Data validity is the data quality dimension that identifies whether a given value falls within an expected range. Combining referential integrity in the database with data type validation is a layered approach to ensuring only valid data gets into a system.
