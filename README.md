@@ -1317,3 +1317,140 @@ RapidMiner offers a free open-source edition with limitations on data size and p
 * **Business Users:** Understand and interpret the results of data mining models presented through clear visualizations.
 
 RapidMiner stands out as a user-friendly and versatile platform that empowers users of various backgrounds to participate in the data science process. Its ability to handle the entire data science workflow, from data preparation to model deployment, makes it a valuable tool for organizations looking to extract knowledge from their data.
+
+### Analytics Suites 
+These tools allow analysts to ingest and clean data, perform exploratory statistical analysis, visualize their data, produce models, make predictions, and communicate and report their results. but they also provide an end-to-end environment where all of an organization's analysts and developers may work together on analytics projects.
+
+### IBM Cognos
+IBM Cognos is an example of one of these integrated analytics suites. It uses a web-based platform to offer analysts within an organization access to their data and is backed by IBM's Watson artificial intelligence capability. 
+
+**Major components of Cognos**
+* **``Report Studio``** = offers advanced report design tools for complex reporting needs.
+*  **``Analysis Studio``** = enables advanced modeling and analytics on large datasets.
+*  **``Metric Studio``** = offers the ability to create scorecards for business leaders to quickly analyze key metrics from across the organization.
+*  **``Event Studio``** = provides real-time data monitoring and alerting, allowing business leaders to be immediately notified when certain events take place and/or provide automated responses to those events.
+*  **``Cognos Viewer``** =  allows stakeholders to easily interact with data and analyses prepared using Cognos.
+*  **``Cognos Connection``** = is a web-based portal that offers access to other elements of the Cognos suite.
+*  **``Query Studio``** =  provides access to data querying and basic reporting tools.
+
+### Microsoft Power BI
+Power BI is Microsoft's analytics suite built on the company's popular SQL Server database platform. 
+
+**MAJOR COMPONENTS OF POWER BI**
+* **```Power BI Desktop``** =Windows application for data analysts, allowing them to interact with data and publish reports for others.
+* The **Power BI** service is Microsoft's software-as-a-service (SaaS) offering that hosts Power BI capabilities in the cloud for customers to access.
+* **Mobile apps** for Power BI provide users of iOS, Android, and Windows devices with access to Power BI capabilities.
+* **Power BI Report Builder** allows developers to create paginated reports that are designed for printing, email, and other distribution methods.
+* **Power BI Report Server** offers organizations the ability to host their own Power BI environment on internal servers for stakeholders to access.
+
+## MicroStrategy
+MicroStrategy is an analytics suite that is less well-known, MicroStrategy offers many of the same tools as its counterparts, making it easy for users to build dashboards and reports and apply machine learning techniques to their business data.
+
+## DOMO 
+Domo is a software-as-a-service (SaaS) analytics platform that allows businesses to ingest their data and apply a variety of analytic and modeling capabilities. 
+
+Domo, unlike the other software we've discussed, isn't primarily a data analysis or machine learning tool. It's a  **business intelligence (BI) platform** that focuses on data visualization,  data management, and communication. Here's how Domo positions itself in the data landscape:
+
+**Focus on Business Intelligence:**
+
+Domo acts as a central hub for your organization's data, allowing you to  connect to various data sources,  unify information, and create a single source of truth.  This  facilitates informed decision-making across all levels of the business.
+
+**Key Capabilities:**
+
+* **Data Integration:**  Connects to a wide range of data sources, including databases, cloud applications, and business systems. 
+* **Data Transformation:** Cleans, prepares, and transforms data for analysis and visualization. 
+* **Self-Service Analytics:**  Empowers business users to explore and analyze data through intuitive dashboards and reports without relying solely on data analysts. 
+* **Data Visualization:**  Provides a variety of interactive visualizations like charts, graphs, and maps to make data insights clear and understandable.
+* **Collaboration:**  Enables teams to share data insights, dashboards, and reports, fostering better communication and data-driven decision making.
+* **Mobile Access:**  Provides access to data and insights on the go through mobile apps.
+
+**Benefits of Using Domo:**
+
+* **Improved Decision Making:**  Provides a centralized platform for accessing and analyzing data, leading to more informed business decisions.
+* **Increased Collaboration:**  Breaks down data silos and fosters collaboration across departments.
+* **Democratization of Data:**  Empowers business users to explore data and gain insights without needing technical expertise.
+* **Real-time Insights:**  Provides access to up-to-date data for real-time decision making.
+* **Scalability:**  Can handle large and complex datasets efficiently.
+
+**Who Should Use Domo?**
+
+* **Business Users:** Explore data, create dashboards and reports, and gain insights relevant to their roles. 
+* **Data Analysts:** Leverage Domo's data preparation and integration capabilities to prepare data for further analysis in other tools. 
+* **Executives:**  Monitor key performance indicators (KPIs) and make strategic decisions based on data visualization and insights.
+* **IT Professionals:** Manage data governance, security, and access controls within the Domo platform.
+
+Domo caters to organizations looking to bridge the gap between data and actionable insights. It empowers users across all levels to leverage data for better decision making, collaboration, and overall business performance.  While it doesn't compete directly with data analysis or machine learning tools like SPSS, Stata, or RapidMiner, it can work alongside them as part of a broader data ecosystem.
+
+## Datorama
+Salesforce Datorama is an analytics tool that focuses on a specific component of an organization's business: sales and marketing. It's not a general-purpose analytics tool but is instead focused on applying machine learning, visualization, and other analytics techniques to the sales and marketing process.
+
+## AWS QuickSight
+AWS QuickSight is a dashboarding tool available as part of the Amazon Web Services cloud offering. This tool's power comes from the fact that it is available on a pay-as-you-go basis and its integration with the powerful data storage, data warehousing, machine learning, and artificial intelligence capabilities offered by the Amazon cloud
+## AWS QuickSight: Cloud-Based Business Intelligence for Everyone
+
+AWS QuickSight is a cloud-based business intelligence (BI) service offered by Amazon Web Services (AWS). It empowers users to easily  visualize, explore, and gain insights from their data, regardless of technical expertise. Here's a closer look at what QuickSight brings to the table:
+
+**Focus on Cloud-Based BI:**
+
+* Leverages the scalability and flexibility of the cloud to handle large datasets and enable secure access from anywhere. 
+* No need for upfront investment in hardware or software infrastructure. 
+
+**Key functionalities:**
+
+* **Data Source Connectivity:** Connects to a wide range of data sources, including  data warehouses like Amazon Redshift,  SaaS applications like Salesforce,  and on-premises databases. 
+* **Data Exploration:**  Provides tools for searching, filtering, and pivoting data to uncover trends and patterns. 
+* **Interactive Dashboards & Reports:**  Create interactive dashboards and reports with various visualizations like charts, graphs, and maps to communicate data insights effectively. 
+* **Machine Learning Insights:**  Amazon Q, a built-in feature, utilizes machine learning to identify relationships, anomalies, and ask natural language questions of your data to uncover insights faster.
+* **Collaboration:** Share dashboards and reports with colleagues for collaborative analysis and decision making.
+* **Security & Scalability:**  Benefits from AWS's robust security infrastructure and scales to accommodate growing data volumes and user needs.
+
+**Benefits of Using AWS QuickSight:**
+
+* **Faster Time to Insights:**  The user-friendly interface and pre-built connectors simplify data exploration and visualization. 
+* **Cost-Effectiveness:**  Pay-as-you-go pricing model based on usage, eliminating upfront infrastructure costs.
+* **Scalability:**  Scales elastically to handle growing data volumes and user concurrency.
+* **Improved Collaboration:**  Enables teams to share insights and make data-driven decisions collaboratively.
+* **Accessibility:**  Accessible from anywhere on any device with an internet connection.
+
+**Who Should Use AWS QuickSight?**
+
+* **Business Users:** Explore data, analyze trends, and gain insights relevant to their roles without needing technical expertise.
+* **Data Analysts:** Leverage QuickSight's data exploration and visualization capabilities to gain insights and create reports. 
+* **Executives:** Monitor key performance indicators (KPIs) and make strategic decisions based on data visualizations and insights. 
+* **IT Professionals:**  Manage data access, security, and user permissions within the QuickSight platform.
+
+AWS QuickSight provides a user-friendly and scalable BI solution for organizations of all sizes.  It  democratizes data exploration and empowers a wider range of users to leverage data for better decision making.  By leveraging the cloud, it offers a cost-effective and flexible alternative to traditional on-premises BI solutions.
+
+## Tableu
+Tableu is the popular data visualization tool which focus of this tool is on the easy ingestion of data from a wide variety of sources and powerful visualization capabilities that allow analysts and business leaders to quickly identify trends in their data and drill down into specific details.
+**Tableau** is a data visualization tool that allows users to connect to, visualize, and analyze data. It is one of the most popular data visualization tools on the market, and is used by businesses of all sizes to gain insights from their data.
+
+**Key Features of Tableau:**
+
+* **Data connectivity:** Tableau can connect to a wide variety of data sources, including databases, spreadsheets, and cloud applications.
+* **Data visualization:** Tableau offers a wide variety of visualization options, including charts, graphs, and maps.
+* **Data analysis:** Tableau includes a number of data analysis tools, such as filters, drill-downs, and aggregations.
+* **Collaboration:** Tableau allows users to share their visualizations and insights with others.
+* **Ease of use:** Tableau is a relatively easy-to-use tool, even for users with no prior experience in data visualization.
+
+**Benefits of Using Tableau:**
+
+* **Improved decision making:** Tableau can help businesses make better decisions by providing them with a clear and concise view of their data.
+* **Increased efficiency:** Tableau can help businesses save time and money by automating data analysis tasks.
+* **Enhanced communication:** Tableau can help businesses communicate data insights more effectively to their employees, customers, and partners.
+* **Greater knowledge:** Tableau can help businesses gain a deeper understanding of their data and how it can be used to improve their operations.
+
+**Who Should Use Tableau?**
+
+* **Data analysts:** Tableau is a powerful tool for data analysts who need to explore, analyze, and visualize data.
+* **Business users:** Tableau is a user-friendly tool that can be used by business users to gain insights from their data.
+* **Executives:** Tableau can help executives make informed decisions by providing them with a high-level view of the business.
+* **Educators:** Tableau can be used in the classroom to teach students about data visualization and data analysis.
+
+**Overall, Tableau is a powerful and versatile data visualization tool that can be used by businesses of all sizes to gain insights from their data.**
+
+## Qlik
+Qlik is another popular SaaS analytics platform, offering access to cloud-based analytics capabilities. The major products offered by Qlik include the following:
+
+QlikView is the company's original analytics platform that focuses on providing rapid insights.
+Qlik Sense is a more advanced platform providing more sophisticated analytics capabilities (at a higher cost, j
