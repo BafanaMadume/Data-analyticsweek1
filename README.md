@@ -969,5 +969,126 @@ Understanding a specific value for a variable relative to the other values for t
 * The first quartile is the group that starts with the minimum value, whereas the fourth quartile is the group that ends with the maximum value.
 
 ---
-0710645461
-# iNFERENTIAL sTATISTICS
+# INFERENTIAL sTATISTICS
+Is a branch of statistics that uses sample data to draw conclusion about the overall population.
+
+### Confidence Intervals
+* when you take a sample from a population ,the statistics you generate are unique to the sample, in order to make inference about the population as a whole.
+* Confidence intervals describes the possibility that a sample statistic contains the true population parameter in a ange of values around the mean
+* When calculating a confidence interval you end up with a lower bound value and an upper bound value
+* So Given the confidence interval range ,the lower bound is the lower limit ,and the upper bound is the upper limit
+
+### Confidence interval Considerations
+* When calculating a confidence interval ,you need to specify the confidence level in addition to the sample mean,population ,standard deviation and sample size
+* Based on the empirical rule ,the confidence level is a percentage that describes the range around the mean.
+*  The wider the confidence level, the more confident one can be in capturing the true mean for the sample. High confidence levels have a wide confidence interval, while low confidence levels have a narrower confidence interval.
+*  The critical value is a Z-score you specify to denote the percentage of values you want the confidence interval to include
+*  The standard error measures the standard deviation of the distribution of means for a given sample size.
+![Screenshot 2024-04-17 094435](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/7ddcb97a-c33d-4e38-9d31-4fc0a348a220)
+
+### Substituting Sample Standard Deviation For Population Standard Deviation.
+* When calculating confidence intervals, you need to have the standard deviation of the entire population.
+*  since getting measures about the whole population is challenging, the population standard deviation is likely unknown. In that case, while it's more precise to use the t-distribution.
+
+![Screenshot 2024-04-17 094911](https://github.com/BafanaMadume/Data-analyticsweek1/assets/141032267/05bb6d1b-4867-475f-a336-a32ce9b76131)
+
+### Hypothesis Testing 
+ A hypothesis test consists of two statements, only one of which can be true. It uses statistical analysis of observable data to determine which of the two statements is most likely to be true.
+* A hypothesis test consists of two components: the null hypothesis and the alternative hypothesis.
+1. first develop the null hypothesis. A null hypothesis (H0) presumes that there is no effect on the test you are conducting.
+2. When hypothesis testing, your default assumption is that the null hypothesis is valid and that you have to have evidence to reject it.
+3. Develop the alternative hypothesis. The alternative hypothesis (Ha) presumes that the test you are conducting has an effect.
+4. To determine the statistical significance of whether to accept or reject the null hypothesis, you need to compare a test statistic against a critical value.
+5. A **``test statistic``** is a single numeric value that describes how closely your sample data matches the distribution of data under the null hypothesis.
+6. In order to get the right critical value, you need to choose a significance level. A significance level, also known as alpha (a), is the probability of rejecting the null hypothesis when it is true.
+**a = 100% - C**
+
+## Simple Linear Regression 
+* ``Simple linear regression`` is an analysis technique that explores the relationship between an independent variable and a dependent variable.
+* Linear regresson to ifdentify whether the independent variable is a good predictor of the dependent variable
+* Using simple linear regression, you want to determine if the dependent variable truly depends on the independent variable.
+
+# Analysis Techniques
+
+### Determine Type of Analysis
+*  The first step to understanding the objectives is to ensure that you have clarity on the business questions at hand.
+* goal of answering a business question is to develop an insight that informs a business decision
+
+### TYPES OF ANALYSIS
+* Trend analysis is one of the type of analysis.
+* Trend analysis seeks to identify patterns by comparing data over time.
+* Performance analysis examines defined goals and measures performance against then and can inform the development of future projections
+
+### Exploratory Data Analysis
+Exploratory data analysis (EDA) uses descriptive statistics to summarize the main characteristics of a dataset, identify outliers, and give you context for further analysis.
+
+* Approaches to conducting an EDA,they encompass the following steps
+These all represent different steps you might take during the process of Exploratory Data Analysis (EDA) to get a good understanding of your data's characteristics and quality. 
+
+**1. Check Data Structure:**
+
+* This involves examining the organization of your data. 
+* Key aspects to consider include:
+    * **Data Types:**  Understanding the data types of each variable (numerical, categorical, text, etc.) is crucial for choosing appropriate analysis techniques.
+    * **Missing Values:** Identifying how missing data is handled (e.g., completely missing, filled with placeholder values) and assessing the potential impact on your analysis.
+    * **Presence of Duplicates:**  Checking for duplicate records and determining if they need to be removed or addressed depending on your specific analysis.
+
+**2. Check Data Representation:**
+
+* This refers to how the data is formatted and labeled. 
+* Here's what to look for:
+    * **Variable Names:**  Meaningful and consistent variable names enhance readability and understanding of the data.
+    * **Value Labels:**  For categorical data, ensure category labels are clear and consistent.  
+    * **Units:**  Verify that units of measurement are consistent throughout the data set (e.g., meters vs centimeters).
+
+**3. Identify Outliers:**
+
+* Outliers are data points that fall far outside the expected range of the majority of the data. 
+* Techniques to identify outliers include:
+    * **Boxplots:**  Visually identify data points that fall outside the interquartile range (IQR).
+    * **Statistical Tests:**  Use statistical tests like standard deviation or interquartile range to define outliers mathematically.
+
+It's important to understand the cause of outliers and determine if they are errors or valid data points that need to be considered in your analysis.
+
+**4. Summarize Statistics:**
+
+* This involves calculating key statistical measures to get a sense of the central tendency, spread, and distribution of your data. 
+* Common summary statistics include:
+    * **Central Tendency:** Mean, Median, Mode - which represent the "average" value
+    * **Spread:**  Standard Deviation, Variance, Interquartile Range (IQR) - which indicate how data points are distributed around the central tendency
+    * **Distribution Skewness:**  Measures if the data is symmetrical or skewed towards one side.
+
+These statistics provide a quick overview of the data's characteristics.
+
+**5. Check Assumptions:**
+
+* Many statistical models and techniques rely on certain assumptions about the underlying data. 
+*  For example, linear regression assumes normality (data is distributed in a bell-shaped curve).
+*  It's crucial to check these assumptions to ensure the chosen analysis method is appropriate for your data. 
+
+### Exam Preparation 
+**Differentiate between descriptive and inferential statistics.**
+
+Descriptive statistics help you understand past events by summarizing data and include measures of frequency and measures of dispersion. Inferential statistics use the powerful concept of concluding an overall population using a sample from that population.
+
+**Calculate measures of central tendency.**
+
+Given a dataset, you should feel comfortable calculating the mean, median, and mode. Recall that the mean is the mathematical average. The median is the value that separates the lower and higher portions of an ordered set of numbers. The mode is the value that occurs most frequently. While mean and median are applicable for numeric data, evaluating the mode is particularly useful when describing categorical data.
+
+**Explain how to interpret a p-value when hypothesis testing.**
+
+Recall that p-values denote the probability that a test statistic is as extreme as the actual result, presuming the null hypothesis is true. The lower the p-value, the more evidence there is to reject the null hypothesis. Generally speaking, it is safe to consider p-values under 0.05 as being statistically significant. With p-values greater than 0.05, there is less evidence supporting the alternative hypothesis.
+
+**Explain the difference between a Type I and Type II error.**
+
+When hypothesis testing, a Type I error is a false positive, while a Type II error is a false negative. Suppose you have a null hypothesis stating that a new vaccine is ineffective and an alternative hypothesis stating that the vaccine has its intended impact. Concluding that the vaccine is effective when it isn't is a Type I error. A Type II error is a false conclusion that the vaccine does not work when it does have the intended effect.
+
+**Describe the purpose of exploratory data analysis (EDA).**
+
+One of the first things you should perform with any new dataset is EDA, a structured approach using descriptive statistics to summarize the characteristics of a dataset, identify any outliers, and help you develop your plan for further analysis
+
+---
+---
+# MODULE THREE 
+
+## Chapter 6 : DATA ANALYTICS TOOLS
