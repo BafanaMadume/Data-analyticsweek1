@@ -1092,3 +1092,43 @@ One of the first things you should perform with any new dataset is EDA, a struct
 # MODULE THREE 
 
 ## Chapter 6 : DATA ANALYTICS TOOLS
+
+### SPREADSHEETS
+Spreadsheets provide intuitive way to organize our data into rows and columns
+* Spreadsheets are productivity software packages that allows user to create documents that organize any type of data into rows and columns
+* So users may place any data they like in the spreadsheet and then quickly easily perform mathematical calculations ,e.g finding sum of values in a row or searching out the minimun ,maximum ,mean and median values in a dataset
+* Spreadsheets lack any of the constraints of a relational database , While you can certainly organize data in a spreadsheet, there's no requirement that you do so. If you'd like, you can mix numbers, text, dates, and other data elements all in the same column.
+* Power of spreadsheets comes from the fact that virtually anybody can use one,The barrier to entry is low because they're readily accessible and easy to use.
+* Microsoft Excel is the most commonly used desktop spreadsheet application.Excel then allows users to perform calculations and visualizations on their data
+
+### Programming Languages
+Business analysts and data scientists need a way to be able to load, manipulate, and analyze data outside of the constraints of software written by another organization.
+
+#### R
+R is a programming language is extremely popular among data analysts because it is focused on creating analytics application.
+* R is available to everyone as a free,open-source language developed by a community developers.
+* R also continues to grow in popularity because of its adoption by the creators of machine learning methods.
+*  new machine learning technique created today quickly becomes available to R users in a redistributable package, offered as open-source code on the Comprehensive R Archive Network (CRAN), a worldwide repository of popular R code.
+*  Modern R developers choose to write, test, and deploy their code using an integrated development environment (IDE) called **RStudio**
+
+#### PYTHON
+Python is about the same age as R, but the major difference between Python and R is that Python is a general-purpose programming language. 
+* Python also has specialized libraries that focus on the needs of analysts and data scientists.
+* Python Data Analysis Library (pandas) provides a set of tools for structuring and analyzing data.
+
+#### Structured Query Language (SQL)
+Structured Query Language (SQL) is the language of databases.
+* developer, administrator, or end user interacts with a database, that interaction happens through the use of a SQL command. SQL is divided into two major sublanguages:
+
+1. **DATA DEFINITION LANGUAGE (DDL)** =  used by developers and administrators,its used to define the structure of the database itself.it doesn't work with the data inside a database,but it sets the ground rules for the database to function
+2. **DATA MANIPULATION LANGUAGE (DML)** = IS THE SUBSET OF SQL commands that are used to work with the data inside of a database,they do not change the database structure ,but they add,remove and change the data inside a database.
+
+###### Three DDL Commands 
+1 . **``CREATE``** = command is used to create a new table within your database or a new database on your server
+2. **``ALTER``** = command is used to change the structure of a table that you've already created ,if you want to modift your database or table ,the ALTER command lets you make those modifications.
+3. **``DROP``** = command deletes an entire table or database from your server ,must be used with caution.
+
+##### Four DML Commands 
+1. **``SELECT``** = command is used to **retrieve information from a database**. It is the most commonly used command in SQL as it is used to pose queries to the database and retrieve the data that you're interested in working with.
+2. **``INSERT``** = command is used to add new records to a database table .If you are adding a new employee, customer order, or marketing activity, the INSERT command allows you to add one or more rows to your database.
+3. **``Upd
