@@ -1452,5 +1452,81 @@ Tableu is the popular data visualization tool which focus of this tool is on the
 ## Qlik
 Qlik is another popular SaaS analytics platform, offering access to cloud-based analytics capabilities. The major products offered by Qlik include the following:
 
-QlikView is the company's original analytics platform that focuses on providing rapid insights.
-Qlik Sense is a more advanced platform providing more sophisticated analytics capabilities (at a higher cost, j
+**QlikView** is the company's original analytics platform that focuses on providing rapid insights.
+**Qlik Sense** is a more advanced platform providing more sophisticated analytics capabilities (at a higher cost, 
+
+### EXAM PREPARATION
+1.**Describe the role of the spreadsheet in the modern organization.** Spreadsheets are productivity software packages that allow users to create documents that organize any type of data into rows and columns. They are extremely flexible analytics tools that are available on most modern office computer systems and are very easy to use. The most commonly used spreadsheet software package is Microsoft Excel.
+
+2.**Understand how analytics teams use programming languages**. Data professionals with coding skills often turn to programming languages to create their software analysis tools. This approach frees them of the constraints of other packages and allows them to create software that directly meets their needs. The R programming language is designed specifically for analytics use and is quite easy to learn. Python is a general-purpose programming language that is more difficult to learn but can create virtually any software package.
+
+3.**Know how analysts and developers interact with databases**. Relational databases are the primary data stores used in the modern organization. Analysts and developers may interact directly with databases using the Structured Query Language (SQL). SQL has two subcomponents. The Data Definition Language (DDL) defines the structure of the database and contains commands to create, alter, and destroy databases and tables. The Data Manipulation Language (DML) interacts with the data stored in a database and contains commands to add, retrieve, modify, and delete data.
+
+4.**Describe the role of statistical analysis software.** Statistical analysis software provides access to advanced statistical environments that are accessible through a graphical user interface and/or a built-in scripting language. These software packages are commonly used by professional statisticians in their work. The statistical analysis software packages covered on the Data+ exam include IBM SPSS, SAS, Stata, and Minitab.
+
+5.**Describe the role of machine learning software**. Machine learning packages offer a set of graphical tools designed to help analysts build machine learning models without requiring them to actually write the code to do so. These machine-learning tools aim to make machine-learning techniques more accessible. Analysts may still tune the parameters of their models but do not necessarily need to write scripts to do so. The machine learning software packages covered on the Data+ exam include IBM SPSS Modeler and RapidMiner.
+
+6.**Describe the role of data analytics suites**. Data analytics suites provide powerful capabilities that cross all phases of an analytics process. These tools allow analysts to ingest and clean data, perform exploratory statistical analysis, visualize their data, produce models, make predictions, and communicate and report their results. The data analytics suites covered on the Data+ exam include IBM Cognos, Microsoft Power BI, MicroStrategy, Domo, Datorama, AWS QuikSight, Tableau, Qlik, and BusinessObjects.
+
+---
+## Chapter 7 : DATA Visualization with reports and Dashboards
+
+
+### Understanding the business Requirements 
+Reports and dashboards both summarize data for end users ,but they distribute the summaries in different ways .
+* A **Report** is a static electronic or physical document that reflects information at a given point in time.
+* a **Dashboard** is an interactive visualization that encourages people to explore data dynamically
+* Report and dashboards are ideal tools for visualizing data content,so it is important to define when developing a report or dashboard "who is the audience?"
+* As an analyst, your job is to ensure that you have access to the appropriate data sources.
+* Once you identify who needs what data and when they need it, you can focus on how people access the report
+* One way to solve distribution challenge is with a pull approach
+* **Pull Approach** = you publish report to a known location ,web page and you let people know the frequency and timing of when the report updates from this approach people can go to the website when they want to use the report.
+* **Push Approach** = report is automatically sent to the appropriate people as it becomes available,one thing to take into consideration when designing a push approach we need to think of distribution considerations
+* **Blended Approach** you store the report centrally and let people know where the report has been updated and is ready for use,you inform people that the report is available while maintaining central control of the report itself
+
+### Understanding Report Design Elements
+When implementing a tool that must be used by people it should be easy to use ,so when we are creating reports and dashboards we can use existing designs priciples as guideposts.
+* the design principles are used as the 5c's of creating visualizations,this will help will help ensure that your reports and dashboards communicate clearly and efficeintly
+1. **C**ontrol
+2. **C**orrectness
+3. **C**larity
+4. **C**onsistency
+5. **C**oncentration
+
+1. **CONTROL**=has to do with how you focus the attention of your audience. When someone encounters a dashboard for the first time, one of your goals is to deliver the pertinent information quickly.
+2. **Correctness** =  makes sure that your information is accurate and that there are no spelling mistakes. Pay close attention to correctness when using corporate names and logos.
+3. **Clarity** = refers to selecting the right visualization tool for communicating your message, making sure the visualization is easy to interpret and visually crisp, and using fonts and sizes that are easy to read.
+4. **Consistency**=  refers to using visuals to focus your audience's attention on the most relevant information without overwhelming them with details.Concentration, along with clarity and control, helps you focus your audience by reducing clutter and removing unnecessary details.
+5. **Concentration** = refers to using visuals to focus your audience's attention on the most relevant information without overwhelming them with details. Concentration, along with clarity and control, helps you focus your audience by reducing clutter and removing unnecessary details. Use a layout that increases concentration and removes distracting visual elements from charts.
+
+### Report Cover Page
+Effective cover pages have a concise title that describes the contents of the report. Ideally, a cover page will also communicate a significant insight from the report itself.
+
+### Design Elements
+developing a report or dashboard, you need to incorporate design elements into your thinking. Color schemes, page layout, font size and style, charts, and corporate standards are among the many design elements you should consider
+
+##### Color Schemes
+A color scheme is a limited selection of colors you use when creating a report or a dashboard, first decision to make is whether you need to use a monochromatic color palette or have the flexibility to use more than one color. A monochromatic palette limits you to working with shades of a single color
+* If you have the luxury of working with more than one color, selecting a complementary color palette is a sound choice. A complementary palette starts with two contrasting colors.
+
+##### Layouts
+ layout of a report or dashboard determines the arrangement of its component parts. It is crucial to consider approachability when thinking about the design.
+ * When developing the layout for a report, begin with a summary before diving into the supporting details. For a long, multipage report
+ * use a table of contents so that the reader can efficiently navigate to a topic of interest
+ * Use brief paragraphs and bullet points to focus the reader's attention.
+ * Ensure parallel construction when developing bullet points. Parallel construction is when all bullet points use the same form and have the same style and approximate length.
+
+##### FONTS
+* typography, a serif is a finishing detail for each letter in a typeface. A serif font style includes serifs (the curls), whereas a sans serif font style does not.
+
+##### Graphics 
+When developing a chart, make sure you specify a chart title. A chart title uses a large font size and concise wording to clearly describe what the chart depicts. If necessary, you can use a subtitle to supplement your title with additional information to add clarity.
+
+### Documentation Elements
+People must trust the information that is visualized so to do this documentation elements
+1. **Version numbers**=A version number is a numeric value that refers to a specific version of a report. Version numbers help you keep track of changes to content and layout over time. 
+2. **Reference data sources** =Reference dates help people understand what to expect in terms of data recency.
+3. **Frequently Asked Questions**= When developing a report or a dashboard, it is good to maintain a set of frequently asked questions (FAQs). A FAQ provides answers to people's most common questions. If the dashboard is available online, the FAQ can contain links to a glossary of unique terms, cross-references to other dashboards or reports, and contact information if there are additional questions.
+4. Appendix = use an appendix to include supporting details that are inappropriate to include in the main body. For example, suppose you use statistical analysis to derive the central insight for a report. Recall that one of the goals of creating a report is to convey insights.
+
+## Understanding Dashboard  Development Methods
